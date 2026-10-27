@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tidepool Pricing</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head">
+  <h1>Pricing that grows with your studio</h1>
+  <p>Tidepool handles invoices, time tracking and client payments. Start free for 14 days on any plan.</p>
+  <div class="billing">
+    <span class="label on" id="lblMonthly">Monthly</span>
+    <button class="switch" id="switch" role="switch" aria-checked="false" aria-label="Bill yearly"></button>
+    <span class="label" id="lblYearly">Yearly</span>
+    <span class="save">Save over 20%</span>
+  </div>
+</header>
+
+<main class="grid">
+  <!-- data-monthly / data-yearly hold the numbers; JS swaps them -->
+  <article class="card" data-monthly="9" data-yearly="7">
+    <h2>Solo</h2>
+    <p class="for">For freelancers sending a few invoices a month.</p>
+    <div class="amount"><span class="price">$9</span><span class="per">/month</span></div>
+    <p class="note"></p>
+    <ul><li>10 invoices a month</li><li>Time tracking</li><li>Card and bank payments</li><li>Email support</li></ul>
+    <a class="btn" href="#solo">Start free trial</a>
+  </article>
+
+  <article class="card featured" data-monthly="24" data-yearly="19">
+    <span class="ribbon popular">Popular</span>
+    <h2>Studio</h2>
+    <p class="for">For small teams who bill every week.</p>
+    <div class="amount"><span class="price">$24</span><span class="per">/month</span></div>
+    <p class="note"></p>
+    <ul><li>Unlimited invoices</li><li>Up to 5 teammates</li><li>Recurring billing</li><li>Custom invoice branding</li><li>Priority support</li></ul>
+    <a class="btn" href="#studio">Start free trial</a>
+  </article>
+
+  <article class="card" data-monthly="59" data-yearly="45">
+    <span class="ribbon value">Best Value</span>
+    <h2>Agency</h2>
+    <p class="for">For agencies managing many clients.</p>
+    <div class="amount"><span class="price">$59</span><span class="per">/month</span></div>
+    <p class="note"></p>
+    <ul><li>Everything in Studio</li><li>Up to 20 teammates</li><li>Client portal</li><li>Multi-currency invoices</li><li>Dedicated account manager</li></ul>
+    <a class="btn" href="#agency">Start free trial</a>
+  </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
